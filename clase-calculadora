@@ -1,0 +1,23 @@
+void main(List<String> args){
+  Calculadora miCalculadora = Calculadora();
+  miCalculadora.a = 10;
+  miCalculadora.b = 5;
+
+  int res = miCalculadora.suma(miCalculadora.a, miCalculadora.b);
+  print("${miCalculadora.a} + ${miCalculadora.b}  = $res");
+  int Res = miCalculadora.resta(miCalculadora.a, miCalculadora.b);
+  print("${miCalculadora.a} - ${miCalculadora.b}  = $Res");
+  int resultado = miCalculadora.multi(miCalculadora.a, miCalculadora.b);
+  print("${miCalculadora.a} * ${miCalculadora.b}  = $resultado");
+  double Resultado = miCalculadora.divi(miCalculadora.a, miCalculadora.b);
+  print("${miCalculadora.a} / ${miCalculadora.b}  = $Resultado");
+}
+
+class Calculadora {
+int a = 0;
+int b = 0;  
+int suma(int a, int b) => a + b;
+int resta(int a, int b) => a - b;
+int multi(int a, int b) => a * b;
+double divi(int a, int b) => a / b;
+}
